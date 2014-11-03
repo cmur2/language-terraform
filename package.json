@@ -1,6 +1,6 @@
 {
   "name": "language-terraform",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Terraform.io support for Atom",
   "repository": {
     "type": "git",
@@ -13,6 +13,6 @@
     "node": "*"
   },
   "bugs": {
-      "url": "https://github.com/GiantToast/language-terraform/issues"
+    "url": "https://github.com/GiantToast/language-terraform/issues"
   }
 }
