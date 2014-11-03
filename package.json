@@ -1,10 +1,10 @@
 {
   "name": "language-terraform",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Terraform.io support for Atom",
   "repository": {
     "type": "git",
-    "url": "https://github.com/GiantToast/language-terraform.git",
+    "url": "https://github.com/GiantToast/language-terraform.git"
   },
   "homepage": "http://GiantToast.github.io/language-terraform",
   "license": "MIT",
