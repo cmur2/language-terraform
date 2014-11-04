@@ -7,6 +7,12 @@
 
 'patterns': [
 	{
+		'match': '(#.*)'
+		'captures':
+			'1':
+				'name': 'comment'
+	}
+	{
 		'match': '^(.+)\\s*=\\s*(["\'].+["\'])'
 		'captures':
 			'1':
@@ -56,12 +62,6 @@
 						'name': 'string'
 			}
 		]
-	}
-	{
-		'match': '(#.*)'
-		'captures':
-			'1':
-				'name': 'comment'
 	}
 	{
 		'begin': '.*/\\*'
