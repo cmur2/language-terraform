@@ -7,8 +7,8 @@
 ## 0.2.0 - Third Release
 * Better names for capture groups
 
-## 0.3.0
+## 0.3.0 - Fourth Release
 * Fix for comments (thanks frntn)
 
-## 0.4.0
+## 0.4.0 - Fifth Release
 * Fix for "${a.b}" style strings. (thanks sbward)
