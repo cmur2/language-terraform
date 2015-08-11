@@ -12,3 +12,7 @@
 
 ## 0.4.0 - Fifth Release
 * Fix for "${a.b}" style strings. (thanks sbward)
+
+## 0.5.0
+* Fix for nested interpolated strings not parsing correctly
+* Fix for comments not parsing correctly inside blocks
