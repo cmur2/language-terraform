@@ -1,0 +1,49 @@
+'scopeName': 'text.interpolation.hashicorp'
+'name': 'HashiCorp String Interpolation'
+'injectionSelector': 'string.interpolated'
+'patterns': [
+  {
+    'name': 'string'
+    'match': '\\$\\$'
+  }
+  {
+    'begin': '(\\$\\{)'
+    'beginCaptures':
+      '1':
+        'name': 'variable.interpolation.begin'
+    'end': '(\\})'
+    'endCaptures':
+      '1':
+        'name': 'variable.interpolation.end'
+    'name': 'none'
+    'patterns': [
+      {
+        'include': '#interplang'
+      }
+    ]
+  }
+]
+'repository':
+  'interplang':
+    'patterns': [
+      {
+        'match': '\\b(concat|element|file|format|formatlist|join|length|lookup|replace|split)\\s*(?:\\()'
+        'captures':
+          '1':
+            'name': 'support.function'
+          '2':
+            'name': 'meta.brace.round'
+      }
+      {
+        'match': '\\b(var|self|module|count|path)\\b'
+        'name': 'support.variable'
+      }
+      {
+        'match': '\\b\\d+\\b'
+        'name': 'constant.numeric'
+      }
+      {
+        'match': '\\*'
+        'name': 'support.constant'
+      }
+    ]
