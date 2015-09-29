@@ -16,3 +16,15 @@
 ## 0.5.0
 * Fix for nested interpolated strings not parsing correctly
 * Fix for comments not parsing correctly inside blocks
+
+## 0.6.0 - Thanks Ryan Graham (rmg)
+* multi-line comments
+* booleans
+* number literals, including supported suffixes
+* syntax highlighting inside string interpolations
+* functions
+* variables
+* literals
+* support for heredoc strings
+* embedded syntax hightlighting based on token suffix (<<CONFIG_JSON, <<CONFIG_YAML, ...)
+* string interpolation highlighting inside the embedded language (this one is kind of magical)
