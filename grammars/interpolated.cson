@@ -27,7 +27,7 @@
   'interplang':
     'patterns': [
       {
-        'match': '\\b(concat|element|file|format|formatlist|join|length|lookup|replace|split)\\s*(?:\\()'
+        'match': '\\b(base64decode|base64encode|cidrhost|cidrnetmask|cidrsubnet|coalesce|compact|concat|element|file|format|formatlist|index|join|length|lookup|lower|replace|split|upper)\\s*(?:\\()'
         'captures':
           '1':
             'name': 'support.function'
