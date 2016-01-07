@@ -43,6 +43,22 @@
         'name': 'constant.numeric'
       }
       {
+        'begin': '(\\$\\{)'
+        'beginCaptures':
+          '1':
+            'name': 'variable.interpolation.begin'
+        'end': '(\\})'
+        'endCaptures':
+          '1':
+            'name': 'variable.interpolation.end'
+        'name': 'none'
+        'patterns': [
+          {
+            'include': '#interplang'
+          }
+        ]
+      }
+      {
         'match': '\\*'
         'name': 'support.constant'
       }
