@@ -32,3 +32,6 @@
 ## 0.7.0 - Thanks John Engelman (johnrengelman) and Bo Tranberg (tranberg)
 * Fix for nested interpolations.
 * New snippets
+
+## 0.7.1 - Thanks Bo Tranberg
+* Small fix for correct resource highlighting
