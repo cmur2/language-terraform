@@ -1,0 +1,216 @@
+'.source.terraform':
+  'variable':
+    'prefix': 'variable'
+    'body': """
+      variable "" {
+        default = ""
+      }
+    """
+
+  'value':
+    'prefix': 'value'
+    'body': 'value = ""'
+
+  'tags':
+    'prefix': 'tags'
+    'body': """
+      tags {
+         = ""
+      }
+    """
+
+  'alias':
+    'prefix': 'alias'
+    'body': """
+      alias {
+         = ""
+      }
+    """
+
+  'ingress':
+    'prefix': 'ingress'
+    'body': """
+      ingress {
+        from_port =
+        to_port =
+        protocol = ""
+        cidr_blocks = [""]
+      }
+    """
+
+  'egress':
+    'prefix': 'egress'
+    'body': """
+      egress {
+        from_port =
+        to_port =
+        protocol = ""
+        cidr_blocks = [""]
+      }
+    """
+
+  'name':
+    'prefix': 'name'
+    'body': 'name = ""'
+
+  'description':
+    'prefix': 'description'
+    'body': 'description = ""'
+
+  'protocol':
+    'prefix': 'protocol'
+    'body': 'protocol = ""'
+
+  'resource':
+    'prefix': 'resource'
+    'body': """
+      resource "" "" {
+      }
+    """
+
+  'email':
+    'prefix': 'email'
+    'body': 'email = ""'
+
+  'token':
+    'prefix': 'token'
+    'body': 'token = ""'
+
+  'region':
+    'prefix': 'region'
+    'body': 'region = ""'
+
+  'size':
+    'prefix': 'size'
+    'body': 'size = ""'
+
+  'ip address':
+    'prefix': 'ip_address'
+    'body': 'ip_address = ""'
+
+  'domain':
+    'prefix': 'domain'
+    'body': 'domain = ""'
+
+  'type':
+    'prefix': 'type'
+    'body': 'type = ""'
+
+  'module':
+    'prefix': 'module'
+    'body': """
+      module "" {
+        source = ""
+      }
+    """
+
+  'secret key':
+    'prefix': 'secret_key'
+    'body': 'secret_key = ""'
+
+  'access key':
+    'prefix': 'access_key'
+    'body': 'access_key = ""'
+
+  'api url':
+    'prefix': 'api_url'
+    'body': 'api_url = ""'
+
+  'api key':
+    'prefix': 'api_key'
+    'body': 'api_key = ""'
+
+  'host':
+    'prefix': 'host'
+    'body': 'host = ""'
+
+  'image':
+    'prefix': 'image'
+    'body': 'image = ""'
+
+  'account file':
+    'prefix': 'account_file'
+    'body': 'account_file = ""'
+
+  'project':
+    'prefix': 'project'
+    'body': 'project = ""'
+
+  'user name':
+    'prefix': 'user_name'
+    'body': 'user_name = ""'
+
+  'tenant name':
+    'prefix': 'tenant_name'
+    'body': 'tenant_name = ""'
+
+  'user':
+    'prefix': 'user'
+    'body': 'user = ""'
+
+  'password':
+    'prefix': 'password'
+    'body': 'password = ""'
+
+  'auth url':
+    'prefix': 'auth_url'
+    'body': 'auth_url = ""'
+
+  'akey':
+    'prefix': 'akey'
+    'body': 'akey = ""'
+
+  'skey':
+    'prefix': 'skey'
+    'body': 'skey = ""'
+
+  'usesandbox':
+    'prefix': 'usesandbox'
+    'body': 'usesandbox = ""'
+
+  'domainid':
+    'prefix': 'domainid'
+    'body': 'domainid = ""'
+
+  'address':
+    'prefix': 'address'
+    'body': 'address = ""'
+
+  'path':
+    'prefix': 'path'
+    'body': 'path = ""'
+
+  'datacenter':
+    'prefix': 'datacenter'
+    'body': 'datacenter = ""'
+
+  'ami':
+    'prefix': 'ami'
+    'body': 'ami = ""'
+
+  'instance type':
+    'prefix': 'instance_type'
+    'body': 'instance_type = ""'
+
+  'listener':
+    'prefix': 'listener'
+    'body': """
+      listener {
+        instance_port =
+        instance_protocol = ""
+        lb_port =
+        lb_protocol = ""
+      }
+    """
+
+  'health check':
+    'prefix': 'health_check'
+    'body': """
+      health_check {
+        healthy_threshold =
+        unhealthy_threshold =
+        timeout =
+        target = ""
+        interval =
+      }
+    """
