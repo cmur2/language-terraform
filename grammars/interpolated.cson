@@ -27,7 +27,7 @@
   'interplang':
     'patterns': [
       {
-        'match': '\\b(concat|element|file|format|formatlist|join|length|lookup|replace|split)\\s*(?:\\()'
+        'match': '\\b(base64decode|base64encode|cidrhost|cidrnetmask|cidrsubnet|coalesce|compact|concat|element|file|format|formatlist|index|join|length|lookup|lower|replace|split|upper)\\s*(?:\\()'
         'captures':
           '1':
             'name': 'support.function'
@@ -41,6 +41,22 @@
       {
         'match': '\\b\\d+\\b'
         'name': 'constant.numeric'
+      }
+      {
+        'begin': '(\\$\\{)'
+        'beginCaptures':
+          '1':
+            'name': 'variable.interpolation.begin'
+        'end': '(\\})'
+        'endCaptures':
+          '1':
+            'name': 'variable.interpolation.end'
+        'name': 'none'
+        'patterns': [
+          {
+            'include': '#interplang'
+          }
+        ]
       }
       {
         'match': '\\*'
