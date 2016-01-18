@@ -28,3 +28,7 @@
 * support for heredoc strings
 * embedded syntax hightlighting based on token suffix (<<CONFIG_JSON, <<CONFIG_YAML, ...)
 * string interpolation highlighting inside the embedded language (this one is kind of magical)
+
+## 0.7.0 - Thanks John Engelman (johnrengelman) and Bo Tranberg (tranberg)
+* Fix for nested interpolations.
+* New snippets
