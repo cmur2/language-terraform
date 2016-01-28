@@ -35,3 +35,6 @@
 
 ## 0.7.1 - Thanks Bo Tranberg
 * Small fix for correct resource highlighting
+
+## 0.7.2
+* Small fix adding `//` as line comment
