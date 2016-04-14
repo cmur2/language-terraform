@@ -38,3 +38,6 @@
 
 ## 0.7.2
 * Small fix adding `//` as line comment
+
+## 0.7.3
+* Adds Indent Rules (thanks itiut)
