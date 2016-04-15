@@ -43,6 +43,15 @@
         'name': 'constant.numeric'
       }
       {
+        'comment': 'Handle curly braces in regex eg. {1,2}'
+        'match': '(?:\\{)(\\d?)(?:,?)(\\d?)(?:\\})'
+        'captures':
+          '1':
+            'name': 'constant.numeric'
+          '2':
+            'name': 'constant.numeric'
+      }
+      {
         'begin': '(\\$\\{)'
         'beginCaptures':
           '1':
