@@ -44,3 +44,7 @@
 
 ## 0.7.4 - Thanks Bo Tranberg
 * Allow dashes in resource names and handle curly braces in regex
+
+## 0.7.5 - Thanks Jamie Lennox and Roberto Barbosa
+* Adding ignore_changes. Ref: https://www.terraform.io/docs/configuration/resources.html#ignore_changes
+* Added all types of variable and module, and provider/provider-aws and provisioner
