@@ -167,7 +167,7 @@
 	'properties':
 		'patterns': [
 			{
-				'match': '\\b(count|depends_on|lifecycle|create_before_destroy|prevent_destroy)\\b\\s*(=)'
+				'match': '\\b(count|depends_on|lifecycle|create_before_destroy|ignore_changes|prevent_destroy)\\b\\s*(=)'
 				'captures':
 					'1':
 						'name': 'support.variable'
