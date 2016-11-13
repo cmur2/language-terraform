@@ -7,6 +7,62 @@
       }$3
     """
 
+  'variable-map':
+    'prefix': 'variable-map'
+    'body': """
+      variable "${1:name}" {
+      	type = "map"
+      	default = {
+      		${3:key1} = "${4:val1}"
+      		${5:key2} = "${6:val2}"
+      	}
+      }$7
+    """
+
+  'variable-string':
+    'prefix': 'variable-string'
+    'body': """
+	variable "${1:name}" {
+	  type    = "string"
+	  default = "${2:value}"
+	}$3
+    """
+
+  'variable-list':
+    'prefix': 'variable-list'
+    'body': """
+	variable "${1:name}" {
+		type    = "list"
+		default = ["${2:value1}", "${3:value1}"]
+	}$4
+    """
+
+  'provisioner':
+    'prefix': 'provisioner'
+    'body': """
+        provisioner "${1:name}" {
+        	${2}
+        }
+    """
+
+  'provider':
+    'prefix': 'provider'
+    'body': """
+      provider "${1:name}" {
+      	${2}
+      }
+    """
+
+  'provider-aws':
+    'prefix': 'provider-aws'
+    'body': """
+	provider "aws" {
+		access_key = "${1}"
+		secret_key = "${2}"
+		region = "${3}"
+	}${4}
+    """
+
   'value':
     'prefix': 'value'
     'body': 'value = "$1"'
@@ -103,6 +159,33 @@
       module "$1" {
         source = "$2"
       }$3
+    """
+
+  'module-path':
+    'prefix': 'module-path'
+    'body': """
+       module "${1:name}" {
+      	source = "${2:./modules/}"
+      	${3}
+      }
+    """
+
+  'module-git':
+    'prefix': 'module-git'
+    'body': """
+        module "${1:name}" {
+        	source = "github.com/${2:owner}/${3:repo}?${4:ref=}"
+        	${5}
+        }
+    """
+
+  'module-git-priv':
+    'prefix': 'module-git-priv'
+    'body': """
+      module "${1:name}" {
+      	source = "git::ssh://git@github.com/${2:owner}/${3:repo}.git${4:?ref=}"
+      	${5}
+      }
     """
 
   'secret key':
