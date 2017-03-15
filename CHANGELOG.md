@@ -48,3 +48,6 @@
 ## 0.7.5 - Thanks Jamie Lennox and Roberto Barbosa
 * Adding ignore_changes. Ref: https://www.terraform.io/docs/configuration/resources.html#ignore_changes
 * Added all types of variable and module, and provider/provider-aws and provisioner
+
+## 0.7.6 - Thanks Ipswitch
+* Adds new keyword snippets for better autocompletion
