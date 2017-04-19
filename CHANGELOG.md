@@ -51,3 +51,6 @@
 
 ## 0.8.0 - Thanks Ipswitch
 * Adds new keyword snippets for better autocompletion
+
+## 0.8.1 - Thanks Seth Chisamore
+* Adds quick toggle line comments to bring more in line with Atom's other grammars.
