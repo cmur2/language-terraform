@@ -44,7 +44,7 @@
       }
       {
         'comment': 'Handle curly braces in regex eg. {1,2}'
-        'match': '(?:\\{)(\\d?)(?:,?)(\\d?)(?:\\})'
+        'match': '(?:\\{)(\\d*)(?:,?)(\\d*)(?:\\})'
         'captures':
           '1':
             'name': 'constant.numeric'
