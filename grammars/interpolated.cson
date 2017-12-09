@@ -35,7 +35,7 @@
             'name': 'meta.brace.round'
       }
       {
-        'match': '\\b(var|self|module|count|path|data|module)\\b'
+        'match': '\\b(var|self|module|count|path|data)\\b'
         'name': 'support.variable'
       }
       {
