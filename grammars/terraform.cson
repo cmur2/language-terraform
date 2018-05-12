@@ -139,6 +139,7 @@
 				'end': '\\]'
 				'patterns': [
 					{'include': '#primitives'}
+					{'include': '#comments'}
 					{'match': ','}
 				]
 			}
