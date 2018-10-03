@@ -1,5 +1,6 @@
 '.source.terraform':
-  'editor':
-    'commentStart': '# '
-    'increaseIndentPattern': '^.*(\\{[^}]*|\\[[^\\]]*)$'
-    'decreaseIndentPattern': '^\\s*[}\\]],?\\s*$'
+  editor:
+    commentStart: '# '
+    increaseIndentPattern: '^.*(\\{[^}]*|\\[[^\\]]*)$'
+    decreaseIndentPattern: '^\\s*[}\\]],?\\s*$'
+    foldEndPattern: '^\\s*\\}'
