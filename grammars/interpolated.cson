@@ -27,7 +27,7 @@
   'interplang':
     'patterns': [
       {
-        'match': '\\b(base64decode|base64encode|cidrhost|cidrnetmask|cidrsubnet|coalesce|compact|concat|element|file|format|formatlist|index|join|length|lookup|lower|replace|split|upper)\\s*(?:\\()'
+        'match': '\\b(abs|basename|base64decode|base64encode|base64gzip|base64sha256|base64sha512|bcrypt|ceil|chomp|chunklist|cidrhost|cidrnetmask|cidrsubnet|coalesce|coalescelist|compact|concat|contains|dirname|distinct|element|file|floor|flatten|format|formatlist|indent|index|join|jsonencode|keys|length|list|log|lookup|lower|map|matchkeys|max|merge|min|md5|pathexpand|pow|replace|rsadecrypt|sha1|sha256|sha512|signum|slice|sort|split|substr|timestamp|timeadd|title|transpose|trimspace|upper|urlencode|uuid|values|zipmap)\\s*(?:\\()'
         'captures':
           '1':
             'name': 'support.function'
@@ -35,7 +35,7 @@
             'name': 'meta.brace.round'
       }
       {
-        'match': '\\b(var|self|module|count|path)\\b'
+        'match': '\\b(count|local|module|path|self|terraform|var)\\b'
         'name': 'support.variable'
       }
       {
