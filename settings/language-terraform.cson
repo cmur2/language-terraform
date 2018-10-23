@@ -3,4 +3,4 @@
     commentStart: '# '
     increaseIndentPattern: '^.*(\\{[^}]*|\\[[^\\]]*)$'
     decreaseIndentPattern: '^\\s*[}\\]],?\\s*$'
-    foldEndPattern: '^\\s*\\}'
+    foldEndPattern: '^\\s*[}\\]]$'
