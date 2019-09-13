@@ -939,6 +939,10 @@
     'prefix': 'available_resource_creation'
     'body': "available_resource_creation"
 
+  'available_server_type_ids':
+    'prefix': 'available_server_type_ids'
+    'body': "available_server_type_ids"
+
   'avatar_url':
     'prefix': 'avatar_url'
     'body': "avatar_url"
@@ -4275,6 +4279,10 @@
     'prefix': 'deregistration_delay'
     'body': "deregistration_delay"
 
+  'description':
+    'prefix': 'description'
+    'body': "description"
+
   'desired_capacity':
     'prefix': 'desired_capacity'
     'body': "desired_capacity"
@@ -6122,6 +6130,96 @@
   'has_wiki':
     'prefix': 'has_wiki'
     'body': "has_wiki"
+
+  'hcloud_datacenter':
+    'prefix': 'hcloud_datacenter'
+    'body': "hcloud_datacenter"
+    'description': 'Provides details about a specific Hetzner Cloud Datacenter. Use this resource to get detailed information about specific datacenter.'
+    'descriptionMoreURL': 'https://www.terraform.io/docs/providers/hcloud/d/datacenter.html'
+
+  'hcloud_datacenters':
+    'prefix': 'hcloud_datacenters'
+    'body': "hcloud_datacenters"
+    'description': 'Provides a list of available Hetzner Cloud Datacenters. This resource may be useful to create highly available infrastructure, distributed across several datacenters.'
+    'descriptionMoreURL': 'https://www.terraform.io/docs/providers/hcloud/d/datacenters.html'
+
+  'hcloud_floating_ip':
+    'prefix': 'hcloud_floating_ip'
+    'body': "hcloud_floating_ip"
+    'description': 'Provides details about a Hetzner Cloud Floating IP.'
+    'descriptionMoreURL': 'https://www.terraform.io/docs/providers/hcloud/d/floating_ip.html'
+
+  'hcloud_floating_ip_assignment':
+    'prefix': 'hcloud_floating_ip_assignment'
+    'body': "hcloud_floating_ip_assignment"
+    'description': 'Provides a Hetzner Cloud Floating IP Assignment to assign a Floating IP to a Hetzner Cloud Server. Deleting a Floating IP Assignment will unassign the Floating IP from the Server.'
+    'descriptionMoreURL': 'https://www.terraform.io/docs/providers/hcloud/r/floating_ip_assignment.html'
+
+  'hcloud_image':
+    'prefix': 'hcloud_image'
+    'body': "hcloud_image"
+    'description': 'Provides details about a Hetzner Cloud Image. This resource is useful if you want to use a non-terraform managed image.'
+    'descriptionMoreURL': 'https://www.terraform.io/docs/providers/hcloud/d/image.html'
+
+  'hcloud_location':
+    'prefix': 'hcloud_location'
+    'body': "hcloud_location"
+    'description': 'Provides details about a specific Hetzner Cloud Location. Use this resource to get detailed information about specific location.'
+    'descriptionMoreURL': 'https://www.terraform.io/docs/providers/hcloud/d/location.html'
+
+  'hcloud_locations':
+    'prefix': 'hcloud_locations'
+    'body': "hcloud_locations"
+    'description': 'Provides a list of available Hetzner Cloud Locations. This resource may be useful to create highly available infrastructure, distributed across several locations.'
+    'descriptionMoreURL': 'https://www.terraform.io/docs/providers/hcloud/d/locations.html'
+
+  'hcloud_network':
+    'prefix': 'hcloud_network'
+    'body': "hcloud_network"
+    'description': 'Provides details about a Hetzner Cloud network. This resource is useful if you want to use a non-terraform managed network.'
+    'descriptionMoreURL': 'https://www.terraform.io/docs/providers/hcloud/d/network.html'
+
+  'hcloud_network_route':
+    'prefix': 'hcloud_network_route'
+    'body': "hcloud_network_route"
+    'description': 'Provides a Hetzner Cloud Network Route to represent a Network route in the Hetzner Cloud.'
+    'descriptionMoreURL': 'https://www.terraform.io/docs/providers/hcloud/r/network_route.html'
+
+  'hcloud_network_subnet':
+    'prefix': 'hcloud_network_subnet'
+    'body': "hcloud_network_subnet"
+    'description': 'Provides a Hetzner Cloud Network Subnet to represent a Subnet in the Hetzner Cloud.'
+    'descriptionMoreURL': 'https://www.terraform.io/docs/providers/hcloud/r/network_subnet.html'
+
+  'hcloud_server':
+    'prefix': 'hcloud_server'
+    'body': "hcloud_server"
+    'description': 'Provides an Hetzner Cloud server resource. This can be used to create, modify, and delete servers. Servers also support provisioning.'
+    'descriptionMoreURL': 'https://www.terraform.io/docs/providers/hcloud/r/server.html'
+
+  'hcloud_server_network':
+    'prefix': 'hcloud_server_network'
+    'body': "hcloud_server_network"
+    'description': 'Provides a Hetzner Cloud Server Network to represent a private network on a server in the Hetzner Cloud.'
+    'descriptionMoreURL': 'https://www.terraform.io/docs/providers/hcloud/r/server_network.html'
+
+  'hcloud_ssh_key':
+    'prefix': 'hcloud_ssh_key'
+    'body': "hcloud_ssh_key"
+    'description': 'Provides details about a Hetzner Cloud SSH Key. This resource is useful if you want to use a non-terraform managed SSH Key.'
+    'descriptionMoreURL': 'https://www.terraform.io/docs/providers/hcloud/d/ssh_key.html'
+
+  'hcloud_volume':
+    'prefix': 'hcloud_volume'
+    'body': "hcloud_volume"
+    'description': 'Provides details about a Hetzner Cloud volume. This resource is useful if you want to use a non-terraform managed volume.'
+    'descriptionMoreURL': 'https://www.terraform.io/docs/providers/hcloud/d/volume.html'
+
+  'hcloud_volume_attachment':
+    'prefix': 'hcloud_volume_attachment'
+    'body': "hcloud_volume_attachment"
+    'description': 'Provides a Hetzner Cloud Volume attachment to attach a Volume to a Hetzner Cloud Server. Deleting a Volume Attachment will detach the Volume from the Server.'
+    'descriptionMoreURL': 'https://www.terraform.io/docs/providers/hcloud/r/volume_attachment.html'
 
   'header':
     'prefix': 'header'
@@ -8218,6 +8316,10 @@
   'MyVPC':
     'prefix': 'MyVPC'
     'body': "MyVPC"
+
+  'name':
+    'prefix': 'name'
+    'body': "name"
 
   'named_port':
     'prefix': 'named_port'
@@ -12379,6 +12481,10 @@
     'prefix': 'summary_function'
     'body': "summary_function"
 
+  'supported_server_type_ids':
+    'prefix': 'supported_server_type_ids'
+    'body': "supported_server_type_ids"
+
   'support_hours':
     'prefix': 'support_hours'
     'body': "support_hours"
@@ -13678,4 +13784,3 @@
   'zones':
     'prefix': 'zones'
     'body': "zones"
-
