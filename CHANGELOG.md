@@ -54,3 +54,6 @@
 
 ## 0.8.1 - Thanks Seth Chisamore
 * Adds quick toggle line comments to bring more in line with Atom's other grammars.
+
+## 0.8.2 - Thanks Paul Vollmer
+* Adds hcloud provider keywords

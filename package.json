@@ -1,6 +1,6 @@
 {
   "name": "language-terraform",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "Terraform.io support for Atom",
   "repository": {
     "type": "git",
