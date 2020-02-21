@@ -138,8 +138,9 @@ repository:
         begin: '\\['
         end: '\\]'
         patterns: [
-          {include: '#primitives'}
           {include: '#comments'}
+          {include: '#primitives'}
+          {include: '#keywords'}
           {match: ','}
         ]
       }
@@ -168,7 +169,7 @@ repository:
   properties:
     patterns: [
       {
-        match: '\\b(count|depends_on|lifecycle|create_before_destroy|ignore_changes|prevent_destroy)\\b\\s*(=)'
+        match: '\\b(count|depends_on|for_each|lifecycle|create_before_destroy|ignore_changes|prevent_destroy)\\b\\s*(=)'
         captures:
           1:
             name: 'support.variable'
@@ -179,7 +180,7 @@ repository:
   keywords:
     patterns: [
       {
-        match: '\\b(resource|provider|variable|output|module)\\b'
+        match: '\\b(for|if|in|module|output|provider|resource|variable)\\b'
         name: 'support.type'
       }
     ]

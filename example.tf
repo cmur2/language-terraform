@@ -49,3 +49,19 @@ provider "aws" {
 	access_key = "${var.*.test_access_key}"
 	secret_key = "${var.test_secret_key}"
 }
+
+output "instance_public_ip_addresses" {
+  value = {
+    for instance in aws_instance.example:
+    instance.id => instance.public
+    if instance.associate_public_ip_address
+  }
+}
+
+resource "aws_subnet" "example" {
+  for_each = var.subnet_numbers
+
+  vpc_id            = aws_vpc.example.id
+  availability_zone = each.key
+  cidr_block        = cidrsubnet(aws_vpc.example.cidr_block, 8, each.value)
+}

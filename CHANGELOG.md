@@ -62,3 +62,6 @@
 * Add support for multiple digits in regex curly braces [#31](https://github.com/cmur2/language-terraform/pull/31)
 * Add additional function names and recognize data and local variable prefix [#32](https://github.com/cmur2/language-terraform/pull/32) and [#40](https://github.com/cmur2/language-terraform/pull/40)
 * Add support for comments in multi-line lists [#36](https://github.com/cmur2/language-terraform/pull/36)
+
+## 0.9.0
+* Support most common Terraform 0.12 features and functions
