@@ -65,3 +65,6 @@
 
 ## 0.9.0
 * Support most common Terraform 0.12 features and functions
+
+## 0.9.1
+* Add package keywords

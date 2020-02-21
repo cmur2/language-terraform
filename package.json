@@ -2,6 +2,13 @@
   "name": "language-terraform",
   "description": "Terraform.io support for Atom",
   "version": "0.9.0",
+  "keywords": [
+    "language",
+    "grammar",
+    "terraform",
+    "terraform-0-12",
+    "configuration"
+  ],
   "engines": {
     "atom": "*",
     "node": "*"
