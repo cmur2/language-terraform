@@ -1,74 +1,72 @@
-'scopeName': 'text.interpolation.hashicorp'
-'name': 'HashiCorp String Interpolation'
-'injectionSelector': 'string.interpolated'
-'patterns': [
+scopeName: 'text.interpolation.hashicorp'
+name: 'HashiCorp String Interpolation'
+injectionSelector: 'string.interpolated'
+
+patterns: [
   {
-    'name': 'string'
-    'match': '\\$\\$'
+    name: 'string'
+    match: '\\$\\$'
   }
   {
-    'begin': '(\\$\\{)'
-    'beginCaptures':
-      '1':
-        'name': 'variable.interpolation.begin'
-    'end': '(\\})'
-    'endCaptures':
-      '1':
-        'name': 'variable.interpolation.end'
-    'name': 'none'
-    'patterns': [
-      {
-        'include': '#interplang'
-      }
+    begin: '(\\$\\{)'
+    beginCaptures:
+      1:
+        name: 'variable.interpolation.begin'
+    end: '(\\})'
+    endCaptures:
+      1:
+        name: 'variable.interpolation.end'
+    name: 'none'
+    patterns: [
+      {include: '#interplang'}
     ]
   }
 ]
-'repository':
-  'interplang':
-    'patterns': [
+
+repository:
+  interplang:
+    patterns: [
       {
-        'match': '\\b(abs|basename|base64decode|base64encode|base64gzip|base64sha256|base64sha512|bcrypt|ceil|chomp|chunklist|cidrhost|cidrnetmask|cidrsubnet|coalesce|coalescelist|compact|concat|contains|dirname|distinct|element|file|floor|flatten|format|formatlist|indent|index|join|jsonencode|keys|length|list|log|lookup|lower|map|matchkeys|max|merge|min|md5|pathexpand|pow|replace|rsadecrypt|sha1|sha256|sha512|signum|slice|sort|split|substr|timestamp|timeadd|title|transpose|trimspace|upper|urlencode|uuid|values|zipmap)\\s*(?:\\()'
-        'captures':
-          '1':
-            'name': 'support.function'
-          '2':
-            'name': 'meta.brace.round'
+        match: '\\b(abs|basename|base64decode|base64encode|base64gzip|base64sha256|base64sha512|bcrypt|ceil|chomp|chunklist|cidrhost|cidrnetmask|cidrsubnet|coalesce|coalescelist|compact|concat|contains|dirname|distinct|element|file|floor|flatten|format|formatlist|indent|index|join|jsonencode|keys|length|list|log|lookup|lower|map|matchkeys|max|merge|min|md5|pathexpand|pow|replace|rsadecrypt|sha1|sha256|sha512|signum|slice|sort|split|substr|timestamp|timeadd|title|transpose|trimspace|upper|urlencode|uuid|values|zipmap)\\s*(?:\\()'
+        captures:
+          1:
+            name: 'support.function'
+          2:
+            name: 'meta.brace.round'
       }
       {
-        'match': '\\b(count|data|local|module|path|self|terraform|var)\\b'
-        'name': 'support.variable'
+        match: '\\b(count|data|local|module|path|self|terraform|var)\\b'
+        name: 'support.variable'
       }
       {
-        'match': '\\b\\d+\\b'
-        'name': 'constant.numeric'
+        match: '\\b\\d+\\b'
+        name: 'constant.numeric'
       }
       {
-        'comment': 'Handle curly braces in regex eg. {1,2}'
-        'match': '(?:\\{)(\\d*)(?:,?)(\\d*)(?:\\})'
-        'captures':
-          '1':
-            'name': 'constant.numeric'
-          '2':
-            'name': 'constant.numeric'
+        comment: 'Handle curly braces in regex eg. {1,2}'
+        match: '(?:\\{)(\\d*)(?:,?)(\\d*)(?:\\})'
+        captures:
+          1:
+            name: 'constant.numeric'
+          2:
+            name: 'constant.numeric'
       }
       {
-        'begin': '(\\$\\{)'
-        'beginCaptures':
-          '1':
-            'name': 'variable.interpolation.begin'
-        'end': '(\\})'
-        'endCaptures':
-          '1':
-            'name': 'variable.interpolation.end'
-        'name': 'none'
-        'patterns': [
-          {
-            'include': '#interplang'
-          }
+        begin: '(\\$\\{)'
+        beginCaptures:
+          1:
+            name: 'variable.interpolation.begin'
+        end: '(\\})'
+        endCaptures:
+          1:
+            name: 'variable.interpolation.end'
+        name: 'none'
+        patterns: [
+          {include: '#interplang'}
         ]
       }
       {
-        'match': '\\*'
-        'name': 'support.constant'
+        match: '\\*'
+        name: 'support.constant'
       }
     ]
