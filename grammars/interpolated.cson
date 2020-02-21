@@ -27,7 +27,7 @@ repository:
   interplang:
     patterns: [
       {
-        match: '\\b(abs|basename|base64decode|base64encode|base64gzip|base64sha256|base64sha512|bcrypt|ceil|chomp|chunklist|cidrhost|cidrnetmask|cidrsubnet|coalesce|coalescelist|compact|concat|contains|dirname|distinct|element|file|floor|flatten|format|formatlist|indent|index|join|jsonencode|keys|length|list|log|lookup|lower|map|matchkeys|max|merge|min|md5|pathexpand|pow|replace|rsadecrypt|sha1|sha256|sha512|signum|slice|sort|split|substr|timestamp|timeadd|title|transpose|trimspace|upper|urlencode|uuid|values|zipmap)\\s*(?:\\()'
+        match: '\\b(abs|basename|base64decode|base64encode|base64gzip|base64sha256|base64sha512|bcrypt|can|ceil|chomp|chunklist|cidrhost|cidrnetmask|cidrsubnet|coalesce|coalescelist|compact|concat|contains|dirname|distinct|element|file|floor|flatten|format|formatlist|indent|index|join|jsonencode|keys|length|list|log|lookup|lower|map|matchkeys|max|merge|min|md5|pathexpand|pow|replace|rsadecrypt|sha1|sha256|sha512|signum|slice|sort|split|substr|timestamp|timeadd|title|tobool|tolist|tomap|tonumber|toset|tostring|try|transpose|trimspace|upper|urlencode|uuid|values|zipmap)\\s*(?:\\()'
         captures:
           1:
             name: 'support.function'
@@ -35,7 +35,7 @@ repository:
             name: 'meta.brace.round'
       }
       {
-        match: '\\b(count|data|each|local|module|path|self|terraform|var)\\b'
+        match: '\\b(count|data|each|local|module|self|terraform|var)\\b'
         name: 'support.variable'
       }
       {

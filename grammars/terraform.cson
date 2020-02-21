@@ -13,6 +13,7 @@ patterns: [
   {include: '#literals'}
   {include: '#keywords'}
   {include: '#properties'}
+  {include: 'text.interpolation.hashicorp#interplang'}
 ]
 
 repository:
@@ -139,8 +140,9 @@ repository:
         end: '\\]'
         patterns: [
           {include: '#comments'}
-          {include: '#primitives'}
+          {include: '#literals'}
           {include: '#keywords'}
+          {include: 'text.interpolation.hashicorp#interplang'}
           {match: ','}
         ]
       }
