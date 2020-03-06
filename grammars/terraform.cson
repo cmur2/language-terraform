@@ -43,6 +43,10 @@ repository:
         match: '\\b(?:\\d+[kKmMgG]?b?)\\b'
         name: 'constant.numeric'
       }
+      {
+        match: '\\b(?:null)\\b'
+        name: 'constant.language'
+      }
       {include: '#heredocs'}
       {include: '#strings'}
     ]

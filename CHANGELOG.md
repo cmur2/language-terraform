@@ -68,3 +68,6 @@
 
 ## 0.9.1
 * Add package keywords
+
+## 0.9.2
+* Add `null` as primitive literal like `true` and `false`
