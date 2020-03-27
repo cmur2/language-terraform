@@ -71,3 +71,6 @@
 
 ## 0.9.2
 * Add `null` as primitive literal like `true` and `false`
+
+## 0.9.3
+* Add support for [indented heredoc strings](https://www.terraform.io/docs/configuration/expressions.html#string-literals) - thanks [privatwolke](https://github.com/privatwolke)
