@@ -62,6 +62,7 @@ repository:
     ]
   heredocs:
     patterns: [
+      # standard heredoc strings
       {
         begin: '<<(\\w*JSON)$'
         beginCaptures:
@@ -124,6 +125,78 @@ repository:
           1:
             name: 'keyword.control.heredoc-token'
         end: '^(\\1)$'
+        endCaptures:
+          1:
+            name: 'keyword.control.heredoc-token'
+        name: 'keyword.operator.heredoc'
+        contentName: 'string.interpolated'
+      }
+
+      # indented heredoc strings
+      # these look very simliar to normal heredoc strings but require a minus
+      # in the start token and allow indentation on the end token
+      {
+        begin: '<<-(\\w*JSON)$'
+        beginCaptures:
+          1:
+            name: 'keyword.control.heredoc-token'
+        end: '^\\s+(\\1)$'
+        endCaptures:
+          1:
+            name: 'keyword.control.heredoc-token'
+        contentName: 'string.interpolated'
+        patterns: [
+          {include: 'source.json'}
+        ]
+      }
+      {
+        begin: '<<-(\\w*YA?ML)$'
+        beginCaptures:
+          1:
+            name: 'keyword.control.heredoc-token'
+        end: '^\\s+(\\1)$'
+        endCaptures:
+          1:
+            name: 'keyword.control.heredoc-token'
+        contentName: 'string.interpolated'
+        patterns: [
+          {include: 'source.yaml'}
+        ]
+      }
+      {
+        begin: '<<-(\\w*XML)$'
+        beginCaptures:
+          1:
+            name: 'keyword.control.heredoc-token'
+        end: '^\\s+(\\1)$'
+        endCaptures:
+          1:
+            name: 'keyword.control.heredoc-token'
+        contentName: 'string.interpolated'
+        patterns: [
+          {include: 'source.xml'}
+        ]
+      }
+      {
+        begin: '<<-(\\w*SH)$'
+        beginCaptures:
+          1:
+            name: 'keyword.control.heredoc-token'
+        end: '^\\s+(\\1)$'
+        endCaptures:
+          1:
+            name: 'keyword.control.heredoc-token'
+        contentName: 'string.interpolated'
+        patterns: [
+          {include: 'source.shell'}
+        ]
+      }
+      {
+        begin: '<<-(\\w+)$'
+        beginCaptures:
+          1:
+            name: 'keyword.control.heredoc-token'
+        end: '^\\s+(\\1)$'
         endCaptures:
           1:
             name: 'keyword.control.heredoc-token'
