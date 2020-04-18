@@ -54,3 +54,6 @@
 
 ## 0.8.1 - Thanks Seth Chisamore
 * Adds quick toggle line comments to bring more in line with Atom's other grammars.
+
+## 0.8.2 - Maintainer change
+* [Kyle](https://github.com/GiantToast) contacted [me](github.com/cmur2/) and we agreed to transfer the [Github repository](https://github.com/GiantToast/language-terraform) and [Atom package](https://atom.io/packages/language-terraform) so I can maintain it since Kyle [lacks the time to handle contributions](https://github.com/GiantToast/language-terraform/issues/42#issuecomment-615306342) - thanks for all our great work Kyle!
