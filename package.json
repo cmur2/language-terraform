@@ -1,7 +1,7 @@
 {
   "name": "language-terraform",
   "description": "Terraform.io support for Atom",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "engines": {
     "atom": "*",
     "node": "*"
