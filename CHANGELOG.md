@@ -57,3 +57,8 @@
 
 ## 0.8.2 - Maintainer change
 * [Kyle](https://github.com/GiantToast) contacted [me](github.com/cmur2/) and we agreed to transfer the [Github repository](https://github.com/GiantToast/language-terraform) and [Atom package](https://atom.io/packages/language-terraform) so I can maintain it since Kyle [lacks the time to handle contributions](https://github.com/GiantToast/language-terraform/issues/42#issuecomment-615306342) - thanks for all our great work Kyle!
+
+## 0.8.3
+* Add support for multiple digits in regex curly braces [#31](https://github.com/cmur2/language-terraform/pull/31)
+* Add additional function names and recognize data and local variable prefix [#32](https://github.com/cmur2/language-terraform/pull/32) and [#40](https://github.com/cmur2/language-terraform/pull/40)
+* Add support for comments in multi-line lists [#36](https://github.com/cmur2/language-terraform/pull/36)
