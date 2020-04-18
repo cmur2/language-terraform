@@ -35,7 +35,7 @@
             'name': 'meta.brace.round'
       }
       {
-        'match': '\\b(count|local|module|path|self|terraform|var)\\b'
+        'match': '\\b(count|data|local|module|path|self|terraform|var)\\b'
         'name': 'support.variable'
       }
       {

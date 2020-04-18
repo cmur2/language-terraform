@@ -1,18 +1,18 @@
 {
   "name": "language-terraform",
-  "version": "0.8.1",
   "description": "Terraform.io support for Atom",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/GiantToast/language-terraform.git"
-  },
-  "homepage": "http://GiantToast.github.io/language-terraform",
-  "license": "MIT",
+  "version": "0.8.2",
   "engines": {
     "atom": "*",
     "node": "*"
   },
+  "homepage": "https://github.com/cmur2/language-terraform",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cmur2/language-terraform.git"
+  },
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GiantToast/language-terraform/issues"
+    "url": "https://github.com/cmur2/language-terraform/issues"
   }
 }
