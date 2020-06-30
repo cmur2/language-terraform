@@ -3,6 +3,7 @@ name: 'Terraform'
 fileTypes: [
   'tf'
   'tfvars'
+  'hcl'
 ]
 foldingStartMarker: '\\{\\s*$'
 foldingStopMarker: '^\\s*\\}'
