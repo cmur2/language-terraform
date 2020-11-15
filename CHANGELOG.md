@@ -74,3 +74,6 @@
 
 ## 0.9.3
 * Add support for [indented heredoc strings](https://www.terraform.io/docs/configuration/expressions.html#string-literals) - thanks [privatwolke](https://github.com/privatwolke)
+
+## 0.9.4
+* Recognize .hcl file extension of [terragrunt](https://terragrunt.gruntwork.io/) as Terraform grammar [#49](https://github.com/cmur2/language-terraform/pull/49) - thanks [MarianoRD](https://github.com/MarianoRD)
