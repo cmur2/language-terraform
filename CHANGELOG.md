@@ -77,3 +77,7 @@
 
 ## 0.9.4
 * Recognize .hcl file extension of [terragrunt](https://terragrunt.gruntwork.io/) as Terraform grammar [#49](https://github.com/cmur2/language-terraform/pull/49) - thanks [MarianoRD](https://github.com/MarianoRD)
+
+## 0.9.5
+* Add belated changelog for 0.9.4
+* Run `terraform fmt` on examples file
