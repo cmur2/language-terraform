@@ -1,5 +1,7 @@
 # taken from https://github.com/hashicorp/terraform/blob/master/examples/aws-s3-cross-account-access/main.tf
 
+# TODO: this tests integration with language-todo
+
 provider "aws" {
   alias = "prod"
 
@@ -11,6 +13,7 @@ provider "aws" {
   list       = [true, false, 123, "$${var.foo.*} = ${var.foo.*}"]
 }
 
+// NOTE Another comment for a great resource
 resource "aws_s3_bucket" "prod" {
   provider = "aws.prod"
 
@@ -65,3 +68,7 @@ resource "aws_subnet" "example" {
   availability_zone = each.key
   cidr_block        = cidrsubnet(aws_vpc.example.cidr_block, 8, each.value)
 }
+
+/*
+ * FIXME(nobody): Nothing
+ */

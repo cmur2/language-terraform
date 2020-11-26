@@ -21,15 +21,26 @@ repository:
   comments:
     patterns: [
       {
-        match: '#.*'
-        name: 'comment.number-sign'
+        begin: '#'
+        beginCaptures:
+          0:
+            name: 'punctuation.definition.comment'
+        end: '$'
+        name: 'comment.line.number-sign'
       }
       {
-        match: '\\/\\/.*'
-        name: 'comment.double-slash'
+        begin: '\\/\\/'
+        beginCaptures:
+          0:
+            name: 'punctuation.definition.comment'
+        end: '$'
+        name: 'comment.line.double-slash'
       }
       {
         begin: '\\/\\*'
+        beginCaptures:
+          0:
+            name: 'punctuation.definition.comment'
         end: '\\*\\/'
         name: 'comment.block'
       }

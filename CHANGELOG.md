@@ -81,3 +81,6 @@
 ## 0.9.5
 * Add belated changelog for 0.9.4
 * Run `terraform fmt` on examples file
+
+## 0.9.6
+* Allow proper tokenizing of TODO-style comments in cooperation with language-todo
