@@ -84,3 +84,6 @@
 
 ## 0.9.6
 * Allow proper tokenizing of TODO-style comments in cooperation with language-todo
+
+## 0.9.7
+* Do not recognize `.hcl` file extension as Terraform grammar anymore as described in [#55](https://github.com/cmur2/language-terraform/issues/55): workarounds are installing `language-hcl` or [configure custom file type of `.hcl` as `source.terraform`](https://flight-manual.atom.io/faq/sections/how-do-i-make-atom-recognize-a-file-with-extension-x-as-language-y/)
